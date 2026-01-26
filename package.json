@@ -8,15 +8,15 @@
     "start": "next start",
     "lint": "eslint"
   },
-  "dependencies": {
-    "next": "16.1.4",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
-  },
   "devDependencies": {
-    "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
-    "eslint-config-next": "16.1.4"
+    "eslint-config-next": "15"
   },
-  "packageManager": "yarn@4.9.4+sha512.7b1cb0b62abba6a537b3a2ce00811a843bea02bcf53138581a6ae5b1bf563f734872bd47de49ce32a9ca9dcaff995aa789577ffb16811da7c603dcf69e73750b"
+  "packageManager": "yarn@4.9.4+sha512.7b1cb0b62abba6a537b3a2ce00811a843bea02bcf53138581a6ae5b1bf563f734872bd47de49ce32a9ca9dcaff995aa789577ffb16811da7c603dcf69e73750b",
+  "dependencies": {
+    "next": "15",
+    "react": "18",
+    "react-dom": "18",
+    "sass": "^1.97.3"
+  }
 }
