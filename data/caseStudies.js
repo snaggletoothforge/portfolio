@@ -168,17 +168,11 @@ Also built a CMS so clients could manage their own product relationships. No mor
         description: 'Tested prototypes with real users in real contexts. Found problems we would never have spotted otherwise.',
       },
     ],
-    solution: `Designed a warnings app that worked in environments where normal notifications fail. Big visual alerts, clear information hierarchy, no ambiguity about what to do next.
-
-The research also uncovered that the existing system they were about to renew was not fit for purpose. Saved them from a bad contract decision.`,
-    solutionImages: [
-      '/images/casestudies/metoffice/solution/1.webp',
-      '/images/casestudies/metoffice/solution/2.webp',
-    ],
+    solution: `Designed a warnings app that worked in environments where normal notifications fail. Big visual alerts, clear information hierarchy, no ambiguity about what to do next.`,
+    solutionImages: [],
     heroStat: '150+',
     heroStatLabel: 'user community',
     outcomes: [
-      'Research prevented a bad contract renewal',
       'Built a community of 150+ meteorologists',
       'Clearer warnings for critical decisions',
       'Design system components shared across teams',
