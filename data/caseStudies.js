@@ -236,13 +236,13 @@ The research also uncovered that the existing system they were about to renew wa
 
 The design system I built meant we could ship features quickly without everything looking like it was designed by different people.`,
     solutionImages: [],
-    heroStat: '100%',
-    heroStatLabel: 'dev ready',
+    heroStat: '25K+',
+    heroStatLabel: 'Community Built',
     outcomes: [
       'Research led navigation structure',
       'Scalable design system',
       'Gamified discovery platform',
-      'Dev ready designs delivered',
+      'Scalable Business Plan',
     ],
   },
   snaggletooth: {
