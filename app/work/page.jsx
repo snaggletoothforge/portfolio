@@ -2,7 +2,7 @@
 // Types: 'image', 'video', 'casestudy'
 // Sizes (optional): 'third', 'twoThirds', 'full' - case studies default to twoThirds
 import styles from './work.module.scss';
-import WorkGrid from '@/components/Workgrid/Workgrid';
+import WorkGrid from '@/components/WorkGrid/WorkGrid';
 import Footer from '@/components/Footer/Footer';
 
 export const metadata = {
