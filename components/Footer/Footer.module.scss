@@ -1,0 +1,166 @@
+@use '../../styles/variables' as *;
+
+.footer {
+  padding: $spacing-md;
+  padding-bottom: 120px; // space for mobile nav
+
+}
+
+.inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $spacing-md;
+
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: $spacing-xl;
+  }
+}
+
+.quotes {
+  text-align: center;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+
+  @media (min-width: $breakpoint-md) {
+    flex: 1;
+    min-height: 180px;
+  }
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: $spacing-xs;
+  margin-bottom: $spacing-md;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+  &.active {
+    background: $color-accent;
+  }
+}
+
+.quote {
+  p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: $spacing-md;
+    font-weight: 100;
+    line-height: 28px;
+  }
+
+  cite {
+    font-style: normal;
+    font-size: 0.95rem;
+    opacity: 0.6;
+  }
+}
+
+.divider {
+  width: 60px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.1);
+
+  @media (min-width: $breakpoint-md) {
+    width: 2px;
+    height: 120px;
+  }
+}
+
+.contact {
+  text-align: center;
+  color:white;
+  @media (min-width: $breakpoint-md) {
+    flex: 1;
+  }
+}
+
+.title {
+  font-family: $font-script;
+  font-size: 1.8rem;
+  margin-bottom: $spacing-lg;
+  font-weight: normal;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 2rem;
+  }
+}
+
+.script {
+  color: $color-accent;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: $spacing-md;
+}
+
+.link {
+  width: 60px;
+  height: 60px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.3s ease, background 0.3s ease;
+
+  &:hover {
+    border-color: $color-accent;
+    background: rgba($color-accent, 0.1);
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+  }
+}
+
+// Add scroll margin so the section doesn't hide under the nav
+.footer {
+  scroll-margin-top: 100px;
+}
+
+// Animation for the contact section when navigated to
+.contact {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+:global(.animate-in) .contact {
+  animation: popIn 0.6s ease 0.5s forwards;
+  animation-delay: 2s;
+  opacity: 0.6; // Starting state while waiting for delay
+  transform: scale(0.95);
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0.6;
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

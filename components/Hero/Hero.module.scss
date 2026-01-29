@@ -1,0 +1,78 @@
+@use '../../styles/variables' as *;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: $spacing-lg $spacing-md;
+  padding-bottom:56px; // space for mobile nav
+  position: relative;
+  z-index: 10;;
+
+  @media (min-width: $breakpoint-md) {
+    padding-bottom: $spacing-lg;
+    padding-top: 200px;
+  }
+}
+
+.photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: $spacing-md;
+
+  @media (min-width: $breakpoint-md) {
+    display: none;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.intro {
+  font-size: 1rem;
+  font-weight: 100;
+  margin-bottom: $spacing-sm;
+  opacity: 0.9;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 1.5rem;
+  }
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.9;
+  margin-bottom: $spacing-sm;
+}
+
+.fuel {
+  font-family: $font-script;
+  font-size: clamp(4rem, 15vw, 20rem);
+  color: $color-text;
+}
+
+.creativity {
+  font-family: $font-script;
+  font-size: clamp(4rem, 18vw, 18rem);
+  color: $color-accent;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 2rem;
+  }
+}

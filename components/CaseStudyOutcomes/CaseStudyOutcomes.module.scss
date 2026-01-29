@@ -1,0 +1,90 @@
+@use '../../styles/variables' as *;
+
+.outcomes {
+  padding: $spacing-md $spacing-md $spacing-xl;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: $spacing-lg;
+      font-family: $font-script;
+  font-size: 2rem;
+  color: var(--accent-color, $color-accent);
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+    gap: $spacing-lg;
+  }
+}
+
+.statCard {
+  background: var(--accent-color, $color-accent);
+  border-radius: 12px;
+  padding: $spacing-lg;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.stat {
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--nav-text-color, #ffffff);
+  font-family: $font-script;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 8rem;
+  }
+}
+
+.statLabel {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-top: $spacing-xs;
+  color: var(--nav-text-color, #ffffff);
+}
+
+.listCard {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: $spacing-lg;
+  flex: 1;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+}
+
+.list li {
+  display: flex;
+  align-items: flex-start;
+  gap: $spacing-sm;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.bullet {
+  width: 10px;
+  height: 10px;
+  min-width: 10px;
+  background: var(--accent-color, $color-accent);
+  border-radius: 50%;
+  margin-top: 6px;
+}

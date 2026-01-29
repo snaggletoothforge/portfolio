@@ -1,0 +1,72 @@
+@use '../../styles/variables' as *;
+
+.section {
+  padding: $spacing-lg $spacing-md;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: $font-script;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: $spacing-lg;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 1.8rem;
+  }
+}
+
+.highlight {
+  color: $color-accent;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-lg;
+
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+.imageLeft {
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row-reverse;
+  }
+}
+
+.text {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: $spacing-lg;
+
+  p {
+    margin-bottom: $spacing-md;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  strong {
+    font-weight: 600;
+  }
+}
+
+.media {
+  flex: 1;
+  border-radius: 16px;
+  overflow: hidden;
+
+  img, video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

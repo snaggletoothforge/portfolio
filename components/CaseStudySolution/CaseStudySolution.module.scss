@@ -1,0 +1,45 @@
+@use '../../styles/variables' as *;
+
+.solution {
+  padding: $spacing-md $spacing-md;
+  max-width: 1100px;
+  margin: 0 auto;
+  @media (min-width: $breakpoint-md) {
+    padding: $spacing-md;
+  }
+}
+
+.text {
+  max-width: 900px;
+  margin-bottom: $spacing-md;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: $spacing-md;
+    font-family: $font-script;
+  font-size: 2rem;
+  color: var(--accent-color, $color-accent);
+}
+
+.text p {
+  margin-bottom: $spacing-md;
+  line-height: 1.6;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-lg;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+}

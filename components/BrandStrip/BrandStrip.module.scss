@@ -1,0 +1,74 @@
+@use '../../styles/variables' as *;
+
+.brandStrip {
+  padding: $spacing-md;
+  text-align: center;
+}
+
+.title {
+  font-family: $font-script;
+  font-size: 1.8rem;
+  margin-bottom: $spacing-lg;
+  font-weight: normal;
+  color: white;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 2.2rem;
+  }
+}
+
+.script {
+  color: $color-accent;
+}
+
+.container {
+  overflow: hidden;
+  width: 100%;
+
+  @media (min-width: $breakpoint-md) {
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 100px;
+    padding: $spacing-lg 0;
+  }
+}
+
+.track {
+  display: flex;
+  gap: $spacing-xl;
+  animation: scroll 20s linear infinite;
+  width: max-content;
+}
+.logo {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  img {
+    filter: brightness(0) invert(1);
+    max-height: 50px;
+    width: auto;
+    max-width:150px;
+
+    @media (min-width: $breakpoint-md) {
+      max-height: 50px;
+    }
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

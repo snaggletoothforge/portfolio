@@ -2,11 +2,11 @@
 $color-bg: #0C0C13;
 $color-text: #ffffff;
 $color-text-muted: #a0a0a0;
-$color-accent: #E93392;
+$color-accent: #EF667D;
 
 // Typography
-$font-body: 'Open Sans', sans-serif;
-$font-script: 'Your script font'; // The one you used for "Creativity"
+$font-body: var(--font-open-sans), 'Open Sans', sans-serif;
+$font-script: 'Friendly Stranger', 'Open Sans', sans-serif;
 
 // Spacing
 $spacing-xs: 8px;

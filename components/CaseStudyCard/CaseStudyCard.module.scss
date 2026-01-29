@@ -1,0 +1,149 @@
+@use '../../styles/variables' as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  overflow: hidden;
+  min-height: 400px;
+  text-decoration: none;
+  color: $color-text;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+    min-height: 350px;
+  }
+}
+
+.darkText {
+  color: #1a1a2e;
+
+  .arrow {
+    border-color: var(--accent-color);
+    
+    img {
+      filter: brightness(0);
+    }
+  }
+}
+
+.content {
+  padding: $spacing-lg;
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $breakpoint-md) {
+    max-width: 80%;
+    padding: $spacing-lg;
+  }
+}
+
+.logo {
+  margin-bottom: $spacing-sm;
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: $spacing-md;
+  }
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 300;
+  margin-bottom: $spacing-md;
+  flex: 1;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 1.1rem;
+  }
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: $spacing-sm;
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  transition: background 0.2s ease;
+
+  .card:hover & {
+    background: var(--accent-color);
+    
+    img {
+      filter: brightness(0) invert(1);
+    }
+  }
+}
+
+.imageWrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+
+  img {
+    object-fit: contain;
+    object-position: right center;
+    height: 100%;
+    width: auto;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    width: 100%;
+  }
+}
+
+.mobileImage {
+  object-fit: contain;
+  object-position: right center;
+}
+
+.desktopImage {
+  display: none;
+  object-fit: contain;
+  object-position: right center;
+}
+
+.wide {
+  @media (min-width: $breakpoint-md) {
+    .content {
+      max-width: 40%;
+    }
+
+    .imageWrapper {
+      width: 60%;
+    }
+
+    .mobileImage {
+      display: none;
+    }
+
+    .desktopImage {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@use '../../styles/variables' as *;
+
+.feature {
+  width: 100%;
+  margin: $spacing-xl 0;
+  max-width: 950px;
+  img, video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  @media (min-width: $breakpoint-md) {
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 0 auto 120px;;
+  }
+}
+
+.caption {
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.6;
+  padding: $spacing-sm $spacing-md;
+}

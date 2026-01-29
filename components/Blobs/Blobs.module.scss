@@ -1,0 +1,78 @@
+@use '../../styles/variables' as *;
+
+.blobs {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.blob {
+  position: absolute;
+  transform-origin: 50% 50%;
+  
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: white;
+  }
+}
+
+.blob1 {
+  width: 60vmax;
+  top: -20%;
+  left: -15%;
+  opacity: 0.1;
+  animation: move1 30s ease-in-out infinite;
+
+  @media (max-width: $breakpoint-md) {
+    width: 80vmax;
+  }
+}
+
+.blob2 {
+  width: 55vmax;
+  top: -15%;
+  right: -20%;
+  opacity: 0.05;
+  animation: move2 35s ease-in-out infinite;
+
+  @media (max-width: $breakpoint-md) {
+    width: 70vmax;
+  }
+}
+
+.blobFull1, .blobFull2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+@keyframes move1 {
+  0%, 100% { 
+    transform: translate(0, 0) rotate(0deg) scale(1); 
+  }
+  33% { 
+    transform: translate(5vw, 8vh) rotate(15deg) scale(1.05); 
+  }
+  66% { 
+    transform: translate(-3vw, 4vh) rotate(-10deg) scale(0.95); 
+  }
+}
+
+@keyframes move2 {
+  0%, 100% { 
+    transform: translate(0, 0) rotate(0deg) scale(1); 
+  }
+  50% { 
+    transform: translate(-8vw, 6vh) rotate(-20deg) scale(1.08); 
+  }
+}

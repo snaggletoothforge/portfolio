@@ -1,5 +1,18 @@
 @use '../styles/variables' as *;
 
+@font-face {
+  font-family: 'Friendly Stranger';
+  src: url('/fonts/FriendlyStrangerRegular.woff2') format('woff2'),
+       url('/fonts/FriendlyStrangerRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,6 +21,10 @@
 
 body {
   background-color: $color-bg;
+  background-image: url("/images/bg.webp");
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
   color: $color-text;
   font-family: $font-body;
   line-height: 1.6;

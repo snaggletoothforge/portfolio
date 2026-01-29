@@ -1,0 +1,43 @@
+@use '../../styles/variables' as *;
+
+.caseStudies {
+  padding: $spacing-md;
+}
+
+.title {
+  font-family: $font-script;
+  font-size: 2rem;
+  margin-bottom: $spacing-lg;
+  font-weight: normal;
+  text-align: center;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 2.5rem;
+    margin-bottom: $spacing-xl;
+  }
+}
+
+.script {
+  color: $color-accent;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-lg;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media (min-width: $breakpoint-md) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-lg;
+  }
+}
+
+// Make the last item (Snaggletooth) full width on desktop
+.grid > *:last-child {
+  @media (min-width: $breakpoint-md) {
+    grid-column: span 2;
+  }
+}

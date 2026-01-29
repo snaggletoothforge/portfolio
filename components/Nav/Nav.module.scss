@@ -1,0 +1,131 @@
+@use '../../styles/variables' as *;
+
+.nav {
+  display: flex;
+  justify-content: center;
+  padding: $spacing-sm;
+  position: fixed;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  @media (min-width: $breakpoint-md) {
+    top: 0;
+    bottom: auto;
+    padding: $spacing-md;
+  }
+}
+
+.navInner {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+  background: var(--accent-color, rgba(255, 255, 255, 0.1));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  padding: $spacing-sm $spacing-md;
+  backdrop-filter: blur(10px);
+
+  @media (min-width: $breakpoint-md) {
+    gap: $spacing-md;
+    padding: $spacing-md $spacing-lg;
+  }
+}
+
+.links {
+  display: flex;
+  gap: $spacing-sm;
+
+  @media (min-width: $breakpoint-md) {
+    gap: $spacing-md;
+  }
+  
+  a {
+    font-size: 14px;
+    transition: color 0.2s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: $font-body;
+    color: var(--nav-text-color, $color-text);
+
+    @media (min-width: $breakpoint-lg) {
+        font-size: 16px;
+    }
+    
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background: var(--nav-text-color, $color-accent);
+  border-radius: 50%;
+  animation: dotAppear 0.3s ease;
+  margin-top: 4px;
+  position: absolute;
+  bottom: -16px;
+}
+
+@keyframes dotAppear {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.photo {
+  display: none;
+
+  @media (min-width: $breakpoint-md) {
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin: -45px $spacing-sm;
+    flex-shrink: 0;
+    perspective: 1000px;
+    
+    &:hover .photoInner {
+      transform: rotateY(180deg) scale(1.2);
+    }
+  }
+}
+
+.photoInner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.back {
+  transform: rotateY(180deg);
+}

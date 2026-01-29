@@ -1,0 +1,63 @@
+@use '../../styles/variables' as *;
+
+.quote {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: $spacing-lg;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  min-height: 200px;
+
+  &::before {
+    content: '"';
+    position: absolute;
+    top: $spacing-md;
+    left: $spacing-lg;
+    font-size: 4rem;
+    line-height: 1;
+    color: $color-accent;
+    opacity: 0.5;
+    font-family: Georgia, serif;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    padding: $spacing-xl;
+    min-height: 250px;
+
+    &::before {
+      font-size: 6rem;
+      top: $spacing-lg;
+    }
+  }
+}
+
+.text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: $spacing-md;
+  position: relative;
+  z-index: 1;
+  font-weight:100;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 1.25rem;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.author {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.role {
+  font-size: 0.85rem;
+  opacity: 0.6;
+}
