@@ -12,7 +12,7 @@ export default function Home() {
         <section style={{ padding: '0 24px', marginBottom: '32px' }}>
         <ContentBox>
             <p>
-              <strong>14 years in, and I still genuinely enjoy this work.</strong> I've led teams, run guilds & shipped design systems across ticketing, property, meteorology, and VR gaming. I like the full arc of research, design, and enough front-end to concern the engineering team. Have a gander below...
+              <strong>14 years in, and I still genuinely enjoy this work.</strong> I've led teams, run research panels, shipped design systems, and designed acquisition and conversion experiences across ticketing, property, meteorology, VR gaming, and my own subscription platform. I like the full arc of research, design, and enough front end to keep the engineering team on their toes. Have a gander below...
             </p>
           </ContentBox>
         </section>

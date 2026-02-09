@@ -13,14 +13,14 @@ export default function Hero() {
         />
       </div>
       
-      <p className={styles.intro}>Hey, I'm Tom and I love to</p>
+      <p className={styles.intro}>Hey, I'm Tom and I love to create</p>
       
       <h1 className={styles.headline}>
-        <span className={styles.fuel}>Fuel</span>
-        <span className={styles.creativity}>Creativity</span>
+        <span className={styles.fuel}>Designs that</span>
+        <span className={styles.creativity}>Convert</span>
       </h1>
       
-      <p className={styles.tagline}>with research.</p>
+      <p className={styles.tagline}>Backed by research.</p>
     </section>
   );
 }

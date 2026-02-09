@@ -64,9 +64,6 @@ export default function Footer() {
             <a href="mailto:checkout@thatnomadchaps.design" className={styles.link}>
               <img src="/images/icons/mail.svg" alt="Email" />
             </a>
-            <a href="/Tom-Mitchell-CV.pdf" download className={styles.link}>
-              <img src="/images/icons/cv.svg" alt="Download CV" />
-            </a>
           </div>
         </div>
       </div>
