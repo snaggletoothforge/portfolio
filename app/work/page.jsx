@@ -28,8 +28,6 @@ const workItems = [
         { type: 'image', src: '/images/designs/refined/optimised/mobile-about-mockup.webp', span: 2 },
         { type: 'video', src: '/images/designs/refined/optimised/hover-invr.webm', span: 2 },
         { type: 'image', src: '/images/designs/refined/optimised/banternav.webp', span: 4 },
-         { type: 'image', src: '/images/designs/refined/optimised/cookies.webp', span: 2 },
-         { type: 'video', src: '/images/designs/refined/optimised/smooth-dv-trim.webm', span: 2 },
         { type: 'video', src: '/images/designs/refined/optimised/sq-account.webm', span: 4 },
 
     
