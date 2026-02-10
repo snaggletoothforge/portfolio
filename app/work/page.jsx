@@ -24,6 +24,7 @@ const workItems = [
   { type: 'image', src: '/images/designs/refined/optimised/1.webp', span: 1 },
     { type: 'image', src: '/images/designs/refined/optimised/brumble-large.webp', span: 3 },
   { type: 'image', src: '/images/designs/searchflow.png', span: 4 },
+  { type: 'image', src: '/images/designs/searchflow1.png', span: 4 },
     { type: 'casestudy', slug: 'landmark' },
   { type: 'casestudy', slug: 'metoffice' },
 
