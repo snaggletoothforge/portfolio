@@ -14,6 +14,8 @@ const workItems = [
   // Row 1: Snaggletooth intro
   { type: 'casestudy', slug: 'digitickets' },
    { type: 'image', src: '/images/designs/cadbury.webp', span: 2 },
+   { type: 'image', src: '/images/designs/digitickets.webp', span: 1 },
+   { type: 'image', src: '/images/designs/digi2.webp', span: 3 },
      { type: 'image', src: '/images/designs/slyme.png', span: 4 },
     { type: 'casestudy', slug: 'snaggletooth' },
       { type: 'video', src: '/images/designs/refined/optimised/trimmed-card-hover.webm', span: 2 },
