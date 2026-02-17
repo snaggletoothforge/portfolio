@@ -12,6 +12,13 @@ export const metadata = {
 
 const workItems = [
   // Row 1: Snaggletooth intro
+        { type: 'casestudy', slug: 'sidequest' },
+                       { type: 'image', src: '/images/designs/refined/optimised/design-system.webp', span: 2 },
+             { type: 'image', src: '/images/designs/refined/optimised/sq-wide.webp', span: 4 },
+         { type: 'video', src: '/images/designs/refined/optimised/trimmed.webm', span: 1 },
+  { type: 'quote', text: "Tom is a brilliant designer and UX researcher. He's my favourite person to have in an ideation session, exceptional at transforming rough fragments of ideas into fully fleshed out UI gold!", author: 'Ryan Smee', role: 'Frontend Developer, SideQuest' },
+                   { type: 'video', src: '/images/designs/refined/optimised/psloader.webm', span: 1 },
+                           { type: 'video', src: '/images/designs/refined/optimised/sq-account.webm', span: 4 },
   { type: 'casestudy', slug: 'digitickets' },
    { type: 'image', src: '/images/designs/cadbury.webp', span: 2 },
    { type: 'image', src: '/images/designs/digitickets.webp', span: 1 },
@@ -30,13 +37,6 @@ const workItems = [
 
               { type: 'image', src: '/images/designs/mo.png', span: 4 },
         { type: 'quote', text: "Tom is one of the most grounded and effective leaders I've worked with. His work is high quality and thoughtful, with strong attention to detail and craft.", author: 'Amy Rushton', role: 'UX Designer, Landmark', span: 4 },
-      { type: 'casestudy', slug: 'sidequest' },
-                       { type: 'image', src: '/images/designs/refined/optimised/design-system.webp', span: 2 },
-             { type: 'image', src: '/images/designs/refined/optimised/sq-wide.webp', span: 4 },
-         { type: 'video', src: '/images/designs/refined/optimised/trimmed.webm', span: 1 },
-  { type: 'quote', text: "Tom is a brilliant designer and UX researcher. He's my favourite person to have in an ideation session, exceptional at transforming rough fragments of ideas into fully fleshed out UI gold!", author: 'Ryan Smee', role: 'Frontend Developer, SideQuest' },
-                   { type: 'video', src: '/images/designs/refined/optimised/psloader.webm', span: 1 },
-                           { type: 'video', src: '/images/designs/refined/optimised/sq-account.webm', span: 4 },
                    { type: 'image', src: '/images/designs/lumiya.png', span: 4 },
 
       
